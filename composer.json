@@ -1,0 +1,16 @@
+{
+    "name": "shipperways/pins",
+    "description": "pins",
+    "autoload": {
+        "psr-4": {
+            "Shipperways\\Pins\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Karim Mohamed",
+            "email": "komicho1996@gmail.com"
+        }
+    ],
+    "require": {}
+}

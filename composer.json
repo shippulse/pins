@@ -12,5 +12,14 @@
             "email": "komicho1996@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shipperways\\Pins\\Providers\\ShipperwaysPinsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

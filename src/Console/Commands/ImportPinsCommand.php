@@ -1,10 +1,10 @@
 <?php
 
-namespace Shipperways\Pins\Console\Commands;
+namespace Obelaw\Shippulse\Pins\Console\Commands;
 
 use function Laravel\Prompts\select;
 use Illuminate\Console\Command;
-use Shipperways\Pins\Services\ImportPinService;
+use Obelaw\Shippulse\Pins\Services\ImportPinService;
 
 class ImportPinsCommand extends Command
 {

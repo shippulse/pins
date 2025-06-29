@@ -1,9 +1,9 @@
 {
-    "name": "shipperways/pins",
+    "name": "shippulse/pins",
     "description": "pins",
     "autoload": {
         "psr-4": {
-            "Shipperways\\Pins\\": "src/"
+            "Obelaw\\Shippulse\\Pins\\": "src/"
         }
     },
     "authors": [
@@ -16,7 +16,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Shipperways\\Pins\\Providers\\ShipperwaysPinsServiceProvider"
+                "Obelaw\\Shippulse\\Pins\\Providers\\ShippulsePinsServiceProvider"
             ]
         }
     },

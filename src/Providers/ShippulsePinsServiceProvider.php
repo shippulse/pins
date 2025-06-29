@@ -1,11 +1,11 @@
 <?php
 
-namespace Shipperways\Pins\Providers;
+namespace Obelaw\Shippulse\Pins\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Shipperways\Pins\Console\Commands\ImportPinsCommand;
+use Obelaw\Shippulse\Pins\Console\Commands\ImportPinsCommand;
 
-class ShipperwaysPinsServiceProvider extends ServiceProvider
+class ShippulsePinsServiceProvider extends ServiceProvider
 {
     /**
      * Register the service provider.

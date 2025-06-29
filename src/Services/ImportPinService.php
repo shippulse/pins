@@ -1,9 +1,9 @@
 <?php
 
-namespace Shipperways\Pins\Services;
+namespace Obelaw\Shippulse\Pins\Services;
 
 use Illuminate\Support\Facades\Log;
-use Shipperways\Pins\Models\Pin;
+use Obelaw\Shippulse\Pins\Models\Pin;
 
 class ImportPinService
 {

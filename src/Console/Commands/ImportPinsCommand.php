@@ -13,7 +13,7 @@ class ImportPinsCommand extends Command
      *
      * @var string
      */
-    protected $name = 'pin:import';
+    protected $name = 'shippulse:pin:import';
 
     /**
      * The console command description.

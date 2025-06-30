@@ -3,6 +3,7 @@
 namespace Obelaw\Shippulse\Pins\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Obelaw\Shippulse\Pins\Console\Commands\ImportMapperCommand;
 use Obelaw\Shippulse\Pins\Console\Commands\ImportPinsCommand;
 
 class ShippulsePinsServiceProvider extends ServiceProvider
@@ -25,6 +26,7 @@ class ShippulsePinsServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 ImportPinsCommand::class,
+                ImportMapperCommand::class
             ]);
         }
 

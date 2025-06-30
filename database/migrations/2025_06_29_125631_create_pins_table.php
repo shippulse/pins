@@ -11,7 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('pins', function (Blueprint $table) {
+        Schema::create('pins', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('parent_id')->nullable()->index()->constrained('pins')->cascadeOnDelete();
+            $table->string('name');
+            $table->enum('type', ['country', 'city', 'state', 'area'])->index();
             $table->json('mapper')->nullable()->after('type');
         });
     }
@@ -21,8 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('pins', function (Blueprint $table) {
-            $table->dropColumn('mapper');
-        });
+        Schema::dropIfExists('pins');
     }
 };
